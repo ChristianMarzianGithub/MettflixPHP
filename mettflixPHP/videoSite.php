@@ -21,10 +21,11 @@
 			<div id="subMainBox">
 				<div id="subMain">		
 					<?php
-								
+					echo foo();					
 					connect();	
 					?>		
-					
+					<video src=<?php echo foo(); ?>  controls autoplay>
+					</video>
 
 				</div>				
 			</div>
@@ -55,21 +56,7 @@ if ($conn->connect_error) {
 $sql = "SELECT name,pfad FROM movies";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    echo "<table border=1>";
-    while($row = $result->fetch_assoc()) {
-    	echo "<tr>";
-    	echo "<td>\"" . $row["name"]. "\"</td>";
-    	echo "<td>\"" . $row["pfad"]. "\"</td>";
-    	
-    	echo "<td><a href=\"videoSite.php?name=". $row["pfad"]."\">zum Video</a></td>";   	
-    	echo "</tr>";        
-    }
-    echo "</table>";
-} else {
-    echo "0 results";
-}
+
 $conn->close();
 
 
