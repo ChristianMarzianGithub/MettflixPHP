@@ -24,9 +24,8 @@
 					echo foo();					
 					connect();	
 					?>		
-					<video src=<?php echo foo(); ?>  controls autoplay>
+					<video width="800" height="450" src=<?php echo foo(); ?>  controls autoplay>
 					</video>
-
 				</div>				
 			</div>
 		</div>

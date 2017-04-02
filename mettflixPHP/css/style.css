@@ -31,9 +31,16 @@
 	position: relative;
 	top: 5px;
 	border: solid 1pt;
-  	width: 70%;
-  	height: 20px;
-  	background-color: red;	
+	width: 70%;
+	height: 20px;
+	background-color: red;
+}
+
+#subHeaderMenuLinkList{
+
+}
+#seachField{
+  width: 200px;
 }
 
 #subMainBox{
