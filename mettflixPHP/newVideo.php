@@ -32,8 +32,15 @@
 					<?php
 					echo foo();	
 					?>		
-					<video width="800" height="450" src=<?php echo foo(); ?>  controls autoplay>
-					</video>
+
+
+					<form>
+						Name: <input type="text" name="videoName">
+						<br><br>Video auswählen <input name="newVideoFile" type="file" size="500" accept="*"> 
+						<br><input type="submit" name="newVideo" value="speichern">
+					</form>
+
+
 				</div>				
 			</div>
 		</div>
@@ -44,6 +51,6 @@
 <?php
 function foo()
 {
-    $retval = "\""."videos\\".$_GET["name"]."\"";
+    $retval = "";
     return $retval;
 }

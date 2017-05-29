@@ -26,6 +26,8 @@
 				<div id="subHeaderMenu">
 					<div id="subHeaderMenuLinkList">
 						<a href="index.html">frontpage</a>
+						<a href="home.php">home</a>	
+						<a href="newVideo.php">Neues Video</a>									
 						</div>					
 				</div>				
 			</div>	
