@@ -31,13 +31,14 @@
 				<div id="subMain">		
 					<?php
 					echo foo();	
+					connect();
+					echo $_GET["newVideoFile"];
+					echo $_GET["videoName"];
 					?>		
 
-					<form action="newVideoResult.php" method="GET">
-						Name: <input type="text" name="videoName">
-						<br><br>Video auswählen <input name="newVideoFile" type="file" size="500" accept="*"> 
-						<br><input type="submit" name="newVideo" value="speichern">
-					</form>
+
+					
+
 				</div>				
 			</div>
 		</div>
@@ -51,3 +52,30 @@ function foo()
     $retval = "";
     return $retval;
 }
+
+function  connect(){
+$servername = "localhost";
+$username = "movieUser";
+$password = "movieUser";
+$dbname = "as";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$arg1 = "hallo";
+$arg2 = "qwer";
+
+$sql = "INSERT INTO movies (name,pfad)VALUES(".arg1.",".arg2.")";
+echo $arg1;
+echo $arg2;
+echo $sql,
+$result = $conn->query($sql);
+
+
+$conn->close();
+}
+?>
