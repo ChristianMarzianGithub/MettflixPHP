@@ -43,6 +43,6 @@
 <?php
 function foo()
 {
-    $retval = "\"".$_GET["name"]."\"";
+    $retval = "\""."videos\\".$_GET["name"]."\"";
     return $retval;
 }

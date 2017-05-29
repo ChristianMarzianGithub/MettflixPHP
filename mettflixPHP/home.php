@@ -59,8 +59,8 @@ function foo()
 }
 function  connect(){
 $servername = "localhost";
-$username = "root";
-$password = "root";
+$username = "movieUser";
+$password = "movieUser";
 $dbname = "as";
 
 // Create connection
