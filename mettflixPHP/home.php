@@ -60,10 +60,10 @@ function foo()
     return $retval;
 }
 function  connect(){
-$servername = "localhost";
-$username = "movieUser";
-$password = "movieUser";
-$dbname = "as";
+$servername = "rdbms.strato.de";
+$username = "U3103216";
+$password = "roller1atmysql";
+$dbname = "DB3103216";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
